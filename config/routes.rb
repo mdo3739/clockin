@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
+
   devise_for :users
   root to: 'static#home'
   get 'static/clockin'
   get 'static/timesheet'
-  
+  resources :employee, except: [:new, :index]
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

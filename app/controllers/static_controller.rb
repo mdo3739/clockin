@@ -3,6 +3,7 @@ class StaticController < ApplicationController
   end
 
   def clockin
+    @employees = Employee.all
   end
 
   def timesheets

@@ -1,2 +1,4 @@
 <h1>Clock In</h1>
-<%= link_to 'Michael Do', '#', class: 'btn btn-info' %>
+<% @employees.each do |emp| %>
+  <%= link_to emp.name, employee_path(emp), method: :patch, class: 'btn btn-primary' %>
+<% end %>
