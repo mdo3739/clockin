@@ -2,7 +2,7 @@ Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
   config.action_mailer.default_url_options = { host: 'foreverphoclockin.herokuapp.com' }
-  config.mailer_sender = "It's you, numb nuts!"
+  config.mailer_sender = "Its-you@numbnuts.com"
   # Code is not reloaded between requests.
   config.cache_classes = true
 
