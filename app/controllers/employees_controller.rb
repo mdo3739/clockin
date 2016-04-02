@@ -9,9 +9,9 @@ class EmployeesController < ApplicationController
   end
 
   def update
-    @employee = Employee.find(params[:id])
-    @employee.update_attributes(clocked_in: true)
-    redirect_to :back
+    #@employee = Employee.find(params[:id])
+    #@employee.update_attributes(clocked_in: true)
+    #redirect_to :back
   end
 
   def destroy
